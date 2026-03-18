@@ -8,7 +8,8 @@ def send_message(message):
         return
 
     payload = {
-        "content": message
+        "content": message,
+        "username": "ほめほめビュッフェ"
     }
 
     try:

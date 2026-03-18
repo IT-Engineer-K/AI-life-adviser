@@ -4,8 +4,8 @@ from gemini import Chat
 from Discord import send_message
 
 def generate_compliment():
-    emails_summary = get_gmail_threads(maxResults=2)
-    calendars_events = get_calendar_events(maxResults=2)
+    emails_summary = get_gmail_threads(maxResults=8)
+    calendars_events = get_calendar_events(maxResults=100)
     calendars_summary = ''
     for event in calendars_events:
         start = event['start'].get('dateTime', event['start'].get('date'))
